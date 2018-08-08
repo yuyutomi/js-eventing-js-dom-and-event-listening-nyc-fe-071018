@@ -143,7 +143,7 @@ function bubble(e) {
 }
 
 for (const aDiv of divs) {
-  divs[i].addEventListener('click', bubble);
+  aDiv.addEventListener('click', bubble);
 }
 ```
 
@@ -177,7 +177,7 @@ function capture(e) {
 
 for (const aDiv of divs) {
   // set the third argument to `true`!
-  divs[i].addEventListener('click', capture, true)
+  aDiv.addEventListener('click', capture, true)
 }
 ```
 
@@ -233,7 +233,7 @@ function bubble(e) {
 }
 
 for (const aDiv of divs) {
-  divs[i].addEventListener('click', bubble)
+  aDiv.addEventListener('click', bubble)
 }
 ```
 

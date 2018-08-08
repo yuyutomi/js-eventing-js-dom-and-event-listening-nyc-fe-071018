@@ -12,7 +12,7 @@ to do just that.
 
 ## Objectives
 
-1. Demonstrate using  `addEventListener()` to a DOM node
+1. Demonstrate using `addEventListener()` to a DOM node
 2. Prevent default behavior
 3. Explain the difference between bubbling and capturing events
 4. Add `stopPropogation()` to a DOM node

@@ -12,7 +12,7 @@ to do just that.
 
 ## Objectives
 
-1. Demonstrate using  `addEventListener()` to a DOM node
+1. Demonstrate using `addEventListener()` to a DOM node
 2. Prevent default behavior
 3. Explain the difference between bubbling and capturing events
 4. Add `stopPropogation()` to a DOM node
@@ -85,6 +85,12 @@ Refresh the page. We've got a vendetta against the letter "g" (71), so we're
 going to prevent the input from receiving "g"s. Paste the following in your
 console:
 
+Also, if you *don't* refresh your page between the previous section of code and
+the following, JavaScript will give you an error about attempting to re-define
+`input`. Check your understanding and make sure you understand what `const` is
+doing. We'll use a number of variable declarations in this exercise, so make
+sure you understand `const` and `let`.
+
 ```js
 const input = document.querySelector('input')
 
@@ -137,7 +143,7 @@ function bubble(e) {
 }
 
 for (const aDiv of divs) {
-  divs[i].addEventListener('click', bubble);
+  aDiv.addEventListener('click', bubble);
 }
 ```
 
@@ -171,7 +177,7 @@ function capture(e) {
 
 for (const aDiv of divs) {
   // set the third argument to `true`!
-  divs[i].addEventListener('click', capture, true)
+  aDiv.addEventListener('click', capture, true)
 }
 ```
 
@@ -227,7 +233,7 @@ function bubble(e) {
 }
 
 for (const aDiv of divs) {
-  divs[i].addEventListener('click', bubble)
+  aDiv.addEventListener('click', bubble)
 }
 ```
 

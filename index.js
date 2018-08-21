@@ -6,3 +6,7 @@ const main = document.querySelector('#main');
 main.addEventListener('click', (event) => {
   console.log("I was clicked");
 });
+paragraph.addEventListener('click', (event) => {
+  alert('You clicked teh p!')
+  paragraph.style.backgroundColor = 'yellow'
+})

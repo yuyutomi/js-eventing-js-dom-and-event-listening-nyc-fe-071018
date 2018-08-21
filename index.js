@@ -1,5 +1,6 @@
 const main = document.querySelector('#main')
 const paragraph = document.querySelector('p')
+const input = document.querySelector('input')
 
 main.addEventListener('click', (event) => {
   console.log("I was clicked")
@@ -21,4 +22,10 @@ function bubble(event) {
   console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
+for (div of divs) {
+  div.addEventListener('click', bubble)
+}
 
+input.addEventListener('keydown', (event) => {
+  console.log(event)
+})

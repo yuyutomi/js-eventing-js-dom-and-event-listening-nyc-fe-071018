@@ -5,8 +5,8 @@ const paragraph = document.querySelector('p');
 //all paragraphs in a div --> const paragraph = document.querySelector('div > p');
 
 paragraph.addEventListener('click', (event) => {
-  console.log("I was clicked");
-});
+  console.log("I was clicked")
+})
 paragraph.addEventListener('click', (event) => {
   alert('You clicked the p!')
   paragraph.style.backgroundColor = 'yellow'

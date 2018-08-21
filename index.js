@@ -14,3 +14,11 @@ paragraph.addEventListener('click', (event) => {
 // can also do things like: 
 //takes the first p in a div --> const paragraph = document.querySelector('div > p');
 //all paragraphs in a div --> const paragraph = document.querySelector('div > p');
+
+
+let divs = documemnt.querySelectorAll('div')
+function bubble(event) {
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
+}
+
+

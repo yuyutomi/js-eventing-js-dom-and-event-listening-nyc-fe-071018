@@ -1,4 +1,7 @@
 const main = document.querySelector('#main');
+// can also do things like: 
+//all paragraphs in a div --> const paragraph = document.querySelector('div > p');
+//all paragraphs in a div --> const paragraph = document.querySelector('div > p');
 
 main.addEventListener('click', (event) => {
   console.log("I was clicked");

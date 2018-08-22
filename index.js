@@ -17,7 +17,7 @@ paragraph.addEventListener('click', (event) => {
 //all paragraphs in a div --> const paragraph = document.querySelector('div > p');
 
 
-let divs = documemnt.querySelectorAll('div')
+let divs = document.querySelectorAll('div')
 function bubble(event) {
   console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
